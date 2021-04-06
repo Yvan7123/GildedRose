@@ -30,4 +30,12 @@ public class Item {
 	public void setQuality(int quality) {
 		this.quality = quality;
 	}
+
+	@Override
+	public String toString() {
+		return  "name='" + name + '\'' +
+				", sellIn=" + sellIn +
+				", quality=" + quality +
+;
+	}
 }
