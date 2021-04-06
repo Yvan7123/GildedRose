@@ -6,12 +6,13 @@ import org.junit.Test;
 import com.google.common.io.Files;
 import static com.google.common.base.Charsets.UTF_8;
 import java.io.File;
+import java.io.IOException;
 
 public class GildedRoseSafetyNet {
     @Test
-    public void should_always_align_with_baseline() {
+    public void should_always_align_with_baseline() throws IOException {
         String output = TextTestFixture.getBaseline();
-        Files.toString(new File("src/test/baseline.txt", UTF_8))
+        String s = Files.toString(new File("src/test/baseline.txt"), UTF_8);
     }
 
 }
