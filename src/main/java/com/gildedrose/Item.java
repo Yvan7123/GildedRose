@@ -44,18 +44,6 @@ public class Item {
 				'}';
 	}
 
-	protected boolean isBackStagePass() {
-		return false;
-	}
-
-	protected boolean isSulfuras() {
-		return false;
-	}
-
-	protected boolean isAgedBrie() {
-		return false;
-	}
-
 	public void passOneDay() {
 		updateSellInDays();
 		updateQuality();
